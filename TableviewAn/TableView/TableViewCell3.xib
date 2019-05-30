@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="TableViewCell3">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="umV-eL-i1T">
+                        <rect key="frame" x="10" y="0.0" width="300" height="96.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="U2p-Es-XuK">
+                        <rect key="frame" x="16" y="10.5" width="121" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="121" id="9oA-0s-Wfc"/>
+                            <constraint firstAttribute="height" constant="27" id="Evh-XW-wUT"/>
+                        </constraints>
+                        <segments>
+                            <segment title="First"/>
+                            <segment title="Second"/>
+                        </segments>
+                    </segmentedControl>
+                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="hZh-Va-Xt9">
+                        <rect key="frame" x="22" y="57.5" width="94" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="9eR-et-6in"/>
+                            <constraint firstAttribute="width" constant="94" id="wOr-0o-uHU"/>
+                        </constraints>
+                    </stepper>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="umV-eL-i1T" firstAttribute="bottom" secondItem="hZh-Va-Xt9" secondAttribute="bottom" constant="10" id="3vj-bd-hhv"/>
+                    <constraint firstAttribute="trailing" secondItem="umV-eL-i1T" secondAttribute="trailing" constant="10" id="Ac4-lb-OHw"/>
+                    <constraint firstItem="U2p-Es-XuK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="B2p-rf-Rn4"/>
+                    <constraint firstItem="umV-eL-i1T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="CN3-N6-tTP"/>
+                    <constraint firstItem="U2p-Es-XuK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="UJg-OY-Wxu"/>
+                    <constraint firstItem="hZh-Va-Xt9" firstAttribute="top" secondItem="U2p-Es-XuK" secondAttribute="bottom" constant="20" id="YyJ-om-b4U"/>
+                    <constraint firstItem="umV-eL-i1T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dqk-cx-FUL"/>
+                    <constraint firstItem="hZh-Va-Xt9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="nYF-0y-1Gg"/>
+                    <constraint firstAttribute="bottom" secondItem="hZh-Va-Xt9" secondAttribute="bottom" constant="10" id="yvh-vW-3Lv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="132.80000000000001" y="175.86206896551727"/>
+        </tableViewCell>
+    </objects>
+</document>

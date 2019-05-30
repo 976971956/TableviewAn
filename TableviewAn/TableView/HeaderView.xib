@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4my-he-6RA" customClass="HeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6w-T4-JlB">
+                    <rect key="frame" x="10" y="10" width="355" height="46"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9b-ED-gq3">
+                            <rect key="frame" x="30" y="12.5" width="69.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRV-Nn-hW7">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="46"/>
+                            <connections>
+                                <action selector="headerClick:" destination="4my-he-6RA" eventType="touchUpInside" id="VYM-oF-cqH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKt-oI-ANB">
+                            <rect key="frame" x="10" y="0.0" width="15" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="R58-pA-4Ym"/>
+                            </constraints>
+                            <state key="normal" image="sanjiaoyou"/>
+                            <state key="selected" image="sanjiaoxia"/>
+                            <connections>
+                                <action selector="leftBtn:" destination="4my-he-6RA" eventType="touchUpInside" id="v7I-9w-ZcU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="nRV-Nn-hW7" firstAttribute="leading" secondItem="L6w-T4-JlB" secondAttribute="leading" id="5ev-QC-g9E"/>
+                        <constraint firstItem="M9b-ED-gq3" firstAttribute="centerY" secondItem="L6w-T4-JlB" secondAttribute="centerY" id="8qy-uk-tC5"/>
+                        <constraint firstItem="M9b-ED-gq3" firstAttribute="leading" secondItem="SKt-oI-ANB" secondAttribute="trailing" constant="5" id="8sw-Nt-YpP"/>
+                        <constraint firstItem="SKt-oI-ANB" firstAttribute="leading" secondItem="L6w-T4-JlB" secondAttribute="leading" constant="10" id="BZz-xI-YCr"/>
+                        <constraint firstAttribute="trailing" secondItem="nRV-Nn-hW7" secondAttribute="trailing" id="Gs3-OV-Qcs"/>
+                        <constraint firstItem="nRV-Nn-hW7" firstAttribute="top" secondItem="L6w-T4-JlB" secondAttribute="top" id="bJQ-38-AdK"/>
+                        <constraint firstItem="SKt-oI-ANB" firstAttribute="top" secondItem="L6w-T4-JlB" secondAttribute="top" id="pMM-iW-jGe"/>
+                        <constraint firstAttribute="bottom" secondItem="nRV-Nn-hW7" secondAttribute="bottom" id="v2G-Mn-dVK"/>
+                        <constraint firstAttribute="bottom" secondItem="SKt-oI-ANB" secondAttribute="bottom" id="yoa-ez-6q7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="L6w-T4-JlB" firstAttribute="top" secondItem="jBy-c8-IEP" secondAttribute="top" constant="10" id="4sv-Z8-Q5T"/>
+                <constraint firstItem="jBy-c8-IEP" firstAttribute="trailing" secondItem="L6w-T4-JlB" secondAttribute="trailing" constant="10" id="eGz-ZV-8dr"/>
+                <constraint firstItem="L6w-T4-JlB" firstAttribute="leading" secondItem="jBy-c8-IEP" secondAttribute="leading" constant="10" id="r1G-Qc-3o0"/>
+                <constraint firstAttribute="bottom" secondItem="L6w-T4-JlB" secondAttribute="bottom" constant="1" id="s0E-gA-OUs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="jBy-c8-IEP"/>
+            <connections>
+                <outlet property="leftBtn" destination="SKt-oI-ANB" id="VqP-Ta-xKY"/>
+                <outlet property="titleLab" destination="M9b-ED-gq3" id="lpZ-7P-j99"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="-120.08995502248877"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sanjiaoxia" width="15" height="15"/>
+        <image name="sanjiaoyou" width="15" height="15"/>
+    </resources>
+</document>
